@@ -727,7 +727,9 @@ body {
   .testimonials-stat-num { font-size: 3rem; }
   .hero-bg-photo {
     background-size: contain;
-    background-position: center 150px;
+    background-position: center 84px;
     background-repeat: no-repeat;
+    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 92%);
+    mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 92%);
   }
 }
