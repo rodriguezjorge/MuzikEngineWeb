@@ -5,21 +5,21 @@ Mismos pasos que se usaron para MedanosWeb (`github.com/rodriguezjorge/MedanosWe
 ## 1. Crear el repositorio en GitHub
 
 1. Entra a **https://github.com/new** (ya con tu sesión de `rodriguezjorge` iniciada).
-2. **Repository name:** `MuzikEngineBandWeb`
+2. **Repository name:** `MuzikEngineWeb`
 3. Visibility: **Public**
 4. **No** marques "Add a README" (ya existe uno local).
 5. Clic en **Create repository**.
 
 ## 2. Subir el código local
 
-Desde esta carpeta (`MuzikEngineBandWeb`), en una terminal:
+Desde esta carpeta (`MuzikEngineWeb`), en una terminal:
 
 ```bash
 git init
 git add .
 git commit -m "Muzik Engine Band: sitio prototipo inicial"
 git branch -M main
-git remote add origin https://github.com/rodriguezjorge/MuzikEngineBandWeb.git
+git remote add origin https://github.com/rodriguezjorge/MuzikEngineWeb.git
 git push -u origin main
 ```
 
@@ -32,7 +32,7 @@ Git te pedirá iniciar sesión en GitHub la primera vez (se abre el navegador o 
 3. **Branch:** `main` · **Folder:** `/ (root)`.
 4. **Save**.
 5. En 1–2 minutos el sitio estará en:
-   **https://rodriguezjorge.github.io/MuzikEngineBandWeb/**
+   **https://rodriguezjorge.github.io/MuzikEngineWeb/**
 
 Cada `git push` a `main` actualiza el sitio automáticamente.
 
