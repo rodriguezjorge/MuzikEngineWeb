@@ -746,13 +746,11 @@ body {
     -webkit-mask-image: linear-gradient(
       to bottom,
       transparent 84px,
-      transparent calc(84px + 38vw),
       black calc(84px + 99.22vw)
     );
     mask-image: linear-gradient(
       to bottom,
       transparent 84px,
-      transparent calc(84px + 38vw),
       black calc(84px + 99.22vw)
     );
   }
