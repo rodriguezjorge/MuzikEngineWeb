@@ -520,9 +520,7 @@ body {
 }
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(2, minmax(0, 267px));
   gap: 1.5rem;
-  justify-content: center;
 }
 .video-frame {
   border-radius: 10px;
@@ -539,7 +537,7 @@ body {
 .video-frame iframe {
   display: block;
   width: 100%;
-  aspect-ratio: 267 / 476;
+  aspect-ratio: 16 / 9;
   height: auto;
 }
 .video-caption {
@@ -549,11 +547,6 @@ body {
   color: var(--text-muted);
   text-align: center;
   border-top: 1px solid var(--border);
-}
-@media (max-width: 560px) {
-  .video-grid {
-    grid-template-columns: minmax(0, 267px);
-  }
 }
 
 /* --- Tour --- */
