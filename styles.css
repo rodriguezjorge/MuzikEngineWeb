@@ -119,22 +119,14 @@ body {
 }
 .hero-content { position: relative; z-index: 1; }
 .hero-logo {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   margin: 0 auto 1.75rem;
+  width: min(92vw, 620px);
 }
 .hero-logo img {
   display: block;
+  width: 100%;
   height: auto;
   filter: drop-shadow(0 4px 30px rgba(212, 175, 55, 0.35));
-}
-.hero-logo-line1 {
-  width: min(90vw, 480px);
-}
-.hero-logo-line2 {
-  width: min(45vw, 230px);
-  margin-top: -0.4rem;
 }
 .hero-tagline {
   font-family: var(--font-display);
@@ -735,7 +727,7 @@ body {
   .testimonials-stat-num { font-size: 3rem; }
   .hero-bg-photo {
     background-size: contain;
-    background-position: top center;
+    background-position: center 84px;
     background-repeat: no-repeat;
   }
 }
