@@ -6,22 +6,29 @@ para poder publicarlo directo en GitHub Pages.
 
 ## Origen del contenido
 
-Este es un **prototipo**. El contenido real (nombre, tagline, teléfono y email) se tomó de la
-página pública de Facebook de la banda: https://www.facebook.com/bringingmusictothetop
+Este es un **prototipo**, pero la mayoría del contenido es **real**, tomado de la página pública
+de Facebook de la banda: https://www.facebook.com/bringingmusictothetop
 
-Facebook bloquea el contenido detallado (fotos, integrantes, calendario de shows) detrás de un
-login, así que esas secciones se llenaron con **fotos y video de stock (con licencia libre)**
-para que la muestra se vea completa — todo listo para reemplazar por contenido real de la banda:
-
-- **Fotos** (`images/`, `images/gallery/`, `images/services/`) — stock de
-  [Unsplash](https://unsplash.com) (licencia Unsplash: uso libre comercial y personal).
-- **Video** (`images/video/`) — clips de [Pexels](https://www.pexels.com) (licencia Pexels: uso
-  libre, sin atribución requerida). El video de fondo del hero y la sección "Video" están
-  claramente marcados en el sitio como muestra ("Sample footage for layout").
+- **Nombre, tagline, teléfono, email, rating** — texto público de la página (Intro / About).
+- **Foto de fondo del hero** (`images/hero-band.jpg`) — recortada del flyer oficial "MUZIK ENGINE
+  BAND CALENDAR 2026" publicado por la banda.
+- **Upcoming Shows** — el calendario completo (17 fechas, sep–dic 2026) tal cual lo publicó la
+  banda, más el flyer original como poster (`images/calendar/2026-calendar.jpg`).
+- **Gallery** (`images/gallery/`) — 6 flyers/artes promocionales reales tomados de las fotos
+  públicas de la página de Facebook.
 - **Repertoire** — lista de ejemplo basada en las dos canciones mencionadas en un post público
-  (Venus, Bananarama); reemplázala con el setlist real.
-- **Upcoming Shows** — placeholder; agrega fechas reales cuando las tengas.
-- **Reviews** — el "100% recommend" sí es un dato público real de la página (7 reviews).
+  (Venus, Bananarama); reemplázala con el setlist real si lo tienes.
+- **Reviews** — el "100% recommend" es un dato público real de la página (7 reviews).
+
+Facebook bloquea contenido más detallado (integrantes con nombre, videos propios) detrás de un
+login, así que esas partes usan **fotos y video de stock con licencia libre** solo para que la
+muestra se vea completa:
+
+- **Fotos** (`images/about.jpg`, `images/services/`, `images/music-bg.jpg`) — stock de
+  [Unsplash](https://unsplash.com) (licencia Unsplash: uso libre comercial y personal).
+- **Video** (`images/video/live-performance.mp4`) — clip de [Pexels](https://www.pexels.com)
+  (licencia Pexels: uso libre, sin atribución requerida), marcado en el sitio como muestra
+  ("Sample footage for layout").
 
 Para reemplazar cualquier foto o video, simplemente sobreescribe el archivo correspondiente en
 `images/` (mismo nombre) o edita la ruta en `index.html`.
