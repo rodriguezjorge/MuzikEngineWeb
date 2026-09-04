@@ -741,19 +741,19 @@ body {
     background-position: center 84px;
     background-repeat: no-repeat;
     transform: scaleY(-1);
-    transform-origin: center calc(84px + 64.89vw);
+    transform-origin: center calc(84px + 99.22vw);
     opacity: 0.85;
     -webkit-mask-image: linear-gradient(
       to bottom,
       transparent 84px,
-      transparent calc(84px + 25vw),
-      black calc(84px + 64.89vw)
+      transparent calc(84px + 38vw),
+      black calc(84px + 99.22vw)
     );
     mask-image: linear-gradient(
       to bottom,
       transparent 84px,
-      transparent calc(84px + 25vw),
-      black calc(84px + 64.89vw)
+      transparent calc(84px + 38vw),
+      black calc(84px + 99.22vw)
     );
   }
 }
