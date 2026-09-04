@@ -108,6 +108,9 @@ body {
   background-size: cover;
   background-position: center top;
 }
+.hero-bg-reflection {
+  display: none;
+}
 .hero-bg {
   position: absolute;
   inset: 0;
@@ -729,7 +732,28 @@ body {
     background-size: contain;
     background-position: center 84px;
     background-repeat: no-repeat;
-    -webkit-mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 92%);
-    mask-image: linear-gradient(to bottom, black 0%, black 65%, transparent 92%);
+  }
+  .hero-bg-reflection {
+    display: block;
+    position: absolute;
+    inset: 0;
+    background-size: contain;
+    background-position: center 84px;
+    background-repeat: no-repeat;
+    transform: scaleY(-1);
+    transform-origin: center calc(84px + 64.89vw);
+    opacity: 0.85;
+    -webkit-mask-image: linear-gradient(
+      to bottom,
+      transparent 84px,
+      transparent calc(84px + 25vw),
+      black calc(84px + 64.89vw)
+    );
+    mask-image: linear-gradient(
+      to bottom,
+      transparent 84px,
+      transparent calc(84px + 25vw),
+      black calc(84px + 64.89vw)
+    );
   }
 }
