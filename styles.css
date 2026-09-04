@@ -518,6 +518,12 @@ body {
   font-weight: 300;
   font-size: 0.95rem;
 }
+.video-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 267px));
+  gap: 1.5rem;
+  justify-content: center;
+}
 .video-frame {
   border-radius: 10px;
   overflow: hidden;
@@ -529,6 +535,25 @@ body {
   width: 100%;
   height: auto;
   max-height: 70vh;
+}
+.video-frame iframe {
+  display: block;
+  width: 100%;
+  aspect-ratio: 267 / 476;
+  height: auto;
+}
+.video-caption {
+  margin: 0;
+  padding: 0.6rem 0.75rem;
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  text-align: center;
+  border-top: 1px solid var(--border);
+}
+@media (max-width: 560px) {
+  .video-grid {
+    grid-template-columns: minmax(0, 267px);
+  }
 }
 
 /* --- Tour --- */

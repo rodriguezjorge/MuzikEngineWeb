@@ -16,19 +16,21 @@ de Facebook de la banda: https://www.facebook.com/bringingmusictothetop
   banda, más el flyer original como poster (`images/calendar/2026-calendar.jpg`).
 - **Gallery** (`images/gallery/`) — 6 flyers/artes promocionales reales tomados de las fotos
   públicas de la página de Facebook.
+- **Video** — dos reels reales de la banda tocando en vivo, incrustados con el plugin oficial de
+  Facebook (`facebook.com/plugins/video.php`) — no se descargó ni se re-alojó el video, solo se
+  usa el reproductor embebido de Facebook (igual que un embed de YouTube).
 - **Repertoire** — lista de ejemplo basada en las dos canciones mencionadas en un post público
   (Venus, Bananarama); reemplázala con el setlist real si lo tienes.
 - **Reviews** — el "100% recommend" es un dato público real de la página (7 reviews).
 
-Facebook bloquea contenido más detallado (integrantes con nombre, videos propios) detrás de un
-login, así que esas partes usan **fotos y video de stock con licencia libre** solo para que la
-muestra se vea completa:
+Facebook bloquea contenido más detallado (integrantes con nombre) detrás de un login, así que
+esas partes usan **fotos de stock con licencia libre** solo para que la muestra se vea completa:
 
 - **Fotos** (`images/about.jpg`, `images/services/`, `images/music-bg.jpg`) — stock de
   [Unsplash](https://unsplash.com) (licencia Unsplash: uso libre comercial y personal).
-- **Video** (`images/video/live-performance.mp4`) — clip de [Pexels](https://www.pexels.com)
-  (licencia Pexels: uso libre, sin atribución requerida), marcado en el sitio como muestra
-  ("Sample footage for layout").
+
+Para agregar más reels, copia un `<iframe>` de video en `#video` con
+`href=` apuntando a la URL del reel (codificada) — mismo patrón que los dos existentes.
 
 Para reemplazar cualquier foto o video, simplemente sobreescribe el archivo correspondiente en
 `images/` (mismo nombre) o edita la ruta en `index.html`.
