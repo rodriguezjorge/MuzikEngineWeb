@@ -106,7 +106,7 @@ body {
   inset: 0;
   background-image: url('images/hero-band.jpg');
   background-size: cover;
-  background-position: center 20%;
+  background-position: center top;
 }
 .hero-bg {
   position: absolute;
