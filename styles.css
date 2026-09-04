@@ -729,29 +729,11 @@ body {
   .section-title { font-size: 1.75rem; letter-spacing: 0.05em; }
   .testimonials-stat-num { font-size: 3rem; }
   .hero-bg-photo {
-    background-size: contain;
+    background-size: cover;
     background-position: center 84px;
     background-repeat: no-repeat;
   }
   .hero-bg-reflection {
-    display: block;
-    position: absolute;
-    inset: 0;
-    background-size: contain;
-    background-position: center 84px;
-    background-repeat: no-repeat;
-    transform: scaleY(-1);
-    transform-origin: center calc(84px + 99.22vw);
-    opacity: 0.85;
-    -webkit-mask-image: linear-gradient(
-      to bottom,
-      transparent 84px,
-      black calc(84px + 99.22vw)
-    );
-    mask-image: linear-gradient(
-      to bottom,
-      transparent 84px,
-      black calc(84px + 99.22vw)
-    );
+    display: none;
   }
 }
