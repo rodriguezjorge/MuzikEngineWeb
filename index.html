@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muzik Engine Band | Live Party &amp; Event Band — Chicago</title>
+  <meta name="description" content="Muzik Engine Band (MEB) — Bringing Music To The Top! Live party, wedding &amp; event band. Book us for your next event.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Anton&family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header">
+    <nav class="nav">
+      <a href="#inicio" class="logo">MUZIK ENGINE<span>BAND</span></a>
+      <ul class="nav-links">
+        <li><a href="#inicio">Home</a></li>
+        <li><a href="#nosotros">About</a></li>
+        <li><a href="#servicios">Services</a></li>
+        <li><a href="#musica">Repertoire</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#testimonios">Reviews</a></li>
+        <li><a href="#contacto">Booking</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="inicio" class="hero">
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="hero-badge-ring">
+            <span class="hero-badge-text">
+              <span class="hero-badge-line1">MUZIK ENGINE</span>
+              <span class="hero-badge-line2">BAND</span>
+            </span>
+          </span>
+        </div>
+        <p class="hero-tagline">Bringing Music To The Top!!</p>
+        <p class="hero-sub">Live party &amp; event band · Weddings · Private Events · Corporate</p>
+        <div class="hero-links">
+          <a href="#contacto" class="btn btn-primary">Book The Band</a>
+          <a href="https://www.facebook.com/bringingmusictothetop" class="btn btn-fb" target="_blank" rel="noopener">
+            <span class="btn-icon" aria-hidden="true">
+              <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor" focusable="false">
+                <path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.86.24-1.45 1.48-1.45H16.6V4.35C16.34 4.32 15.46 4.25 14.42 4.25c-2.16 0-3.64 1.32-3.64 3.75V10.5H8.25v3h2.53V21h2.72Z"/>
+              </svg>
+            </span>
+            <span class="btn-label">Follow on Facebook</span>
+          </a>
+        </div>
+      </div>
+      <div class="scroll-hint">↓</div>
+    </section>
+
+    <section id="nosotros" class="section about">
+      <div class="container">
+        <h2 class="section-title">About</h2>
+        <div class="about-grid">
+          <p class="about-text">Muzik Engine Band (MEB) is a high-energy live band bringing music to the top of the dance floor at weddings, private parties and corporate events. With a full lineup of vocalists and musicians, MEB delivers a polished, professional show built around crowd favorites that get everyone dancing.</p>
+          <p class="about-text">This site is a prototype built from the band's public Facebook page — real photos, member bios, tour dates and music links can be swapped in any time.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="servicios" class="section services">
+      <div class="container">
+        <h2 class="section-title">Services</h2>
+        <p class="services-intro">MEB performs for all kinds of events with a repertoire built to fit the room.</p>
+        <ul class="services-list">
+          <li class="service-item">
+            <h3 class="service-title">Weddings</h3>
+            <p class="service-text">Ceremony, cocktail hour and full reception sets — from first dance to last call.</p>
+          </li>
+          <li class="service-item">
+            <h3 class="service-title">Private Events</h3>
+            <p class="service-text">Anniversaries, birthdays and celebrations with a live band that fills the dance floor.</p>
+          </li>
+          <li class="service-item">
+            <h3 class="service-title">Corporate &amp; Galas</h3>
+            <p class="service-text">Polished, professional live music for company parties, galas and fundraisers.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="gallery" class="section gallery">
+      <div class="container">
+        <h2 class="section-title">Gallery</h2>
+        <div class="gallery-carousel">
+          <button type="button" class="gallery-arrow gallery-arrow-prev" aria-label="Previous photos">&lsaquo;</button>
+          <div class="gallery-view">
+            <div class="gallery-slots"></div>
+          </div>
+          <button type="button" class="gallery-arrow gallery-arrow-next" aria-label="Next photos">&rsaquo;</button>
+        </div>
+        <p class="gallery-empty-note">Add show photos to <code>images/gallery/</code> and run <code>node generate-gallery.js</code> to fill this section.</p>
+      </div>
+    </section>
+
+    <div id="lightbox" class="lightbox" aria-hidden="true" role="dialog" aria-label="Expand image">
+      <button type="button" class="lightbox-close" aria-label="Close">&times;</button>
+      <div class="lightbox-backdrop"></div>
+      <img src="" alt="" class="lightbox-img">
+    </div>
+
+    <section id="musica" class="section music">
+      <div class="container">
+        <h2 class="section-title">Repertoire</h2>
+        <p class="music-intro">A crowd-tested setlist spanning decades of dance-floor hits.</p>
+        <ul class="tracks-list">
+          <li>Venus</li>
+          <li>Bananarama</li>
+          <li>Motown &amp; Soul</li>
+          <li>70s &amp; 80s Disco</li>
+          <li>Pop &amp; Top 40</li>
+          <li>Latin &amp; Dance</li>
+        </ul>
+        <p class="music-release">Follow the band's <a href="https://www.facebook.com/bringingmusictothetop" target="_blank" rel="noopener">Facebook page</a> for the monthly show calendar.</p>
+      </div>
+    </section>
+
+    <section id="tour" class="section tour">
+      <div class="container">
+        <h2 class="section-title">Upcoming Shows</h2>
+        <p class="tour-intro">Check back soon, or see the latest dates on Facebook.</p>
+        <div class="tour-list">
+          <p class="tour-empty">Dates coming soon. Follow us on <a href="https://www.facebook.com/bringingmusictothetop" target="_blank" rel="noopener">Facebook</a> for the current calendar.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonios" class="section testimonials">
+      <div class="container">
+        <h2 class="section-title">Reviews</h2>
+        <div class="testimonials-stat">
+          <span class="testimonials-stat-num">100%</span>
+          <span class="testimonials-stat-label">recommend MEB<br>based on reviews on Facebook</span>
+        </div>
+        <p class="testimonials-cta"><a href="https://www.facebook.com/bringingmusictothetop" target="_blank" rel="noopener">Read reviews on Facebook →</a></p>
+      </div>
+    </section>
+
+    <section id="contacto" class="section contact">
+      <div class="container">
+        <h2 class="section-title">Booking &amp; Contact</h2>
+        <p class="contact-intro">Ready to bring MEB to your event? Reach out and let's talk dates.</p>
+        <div class="contact-cards">
+          <a href="tel:+17739779802" class="contact-card">
+            <span class="contact-card-label">Call / Text</span>
+            <span class="contact-card-value">(773) 977-9802</span>
+          </a>
+          <a href="mailto:philkorus@yahoo.com" class="contact-card">
+            <span class="contact-card-label">Email</span>
+            <span class="contact-card-value">philkorus@yahoo.com</span>
+          </a>
+          <a href="https://www.facebook.com/bringingmusictothetop" target="_blank" rel="noopener" class="contact-card">
+            <span class="contact-card-label">Facebook</span>
+            <span class="contact-card-value">@bringingmusictothetop</span>
+          </a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p class="footer-brand">MUZIK ENGINE BAND</p>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/bringingmusictothetop" target="_blank" rel="noopener" aria-label="Facebook">
+          <span class="footer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+              <path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.86.24-1.45 1.48-1.45H16.6V4.35C16.34 4.32 15.46 4.25 14.42 4.25c-2.16 0-3.64 1.32-3.64 3.75V10.5H8.25v3h2.53V21h2.72Z"/>
+            </svg>
+          </span>
+          Facebook
+        </a>
+        <a href="tel:+17739779802" aria-label="Phone">
+          <span class="footer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+              <path d="M6.6 10.8c1.4 2.8 3.8 5.2 6.6 6.6l2.2-2.2c.3-.3.7-.4 1-.2 1.1.4 2.3.6 3.6.6.6 0 1 .4 1 1V20c0 .6-.4 1-1 1C10.9 21 3 13.1 3 3.9c0-.6.4-1 1-1h3.4c.6 0 1 .4 1 1 0 1.3.2 2.5.6 3.6.1.4 0 .8-.2 1L6.6 10.8Z"/>
+            </svg>
+          </span>
+          Call
+        </a>
+        <a href="mailto:philkorus@yahoo.com" aria-label="Email">
+          <span class="footer-icon" aria-hidden="true">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" focusable="false">
+              <path d="M3.5 5.5h17a1 1 0 0 1 1 1V17a1 1 0 0 1-1 1h-17a1 1 0 0 1-1-1V6.5a1 1 0 0 1 1-1Zm.7 1.6L12 12.3l7.8-5.2H4.2ZM19.5 8.9l-7.2 4.8a1 1 0 0 1-1.1 0L4 8.9V16.5h15.5V8.9Z"/>
+            </svg>
+          </span>
+          Email
+        </a>
+      </div>
+      <p class="footer-copy">Bringing Music To The Top!! · Prototype site</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
