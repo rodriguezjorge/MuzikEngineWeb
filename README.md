@@ -10,14 +10,21 @@ Este es un **prototipo**. El contenido real (nombre, tagline, teléfono y email)
 página pública de Facebook de la banda: https://www.facebook.com/bringingmusictothetop
 
 Facebook bloquea el contenido detallado (fotos, integrantes, calendario de shows) detrás de un
-login, así que esas secciones quedaron con **contenido de ejemplo / placeholders** listos para
-reemplazar:
+login, así que esas secciones se llenaron con **fotos y video de stock (con licencia libre)**
+para que la muestra se vea completa — todo listo para reemplazar por contenido real de la banda:
 
-- **Gallery** — vacía; agrega fotos reales a `images/gallery/` (ver abajo).
+- **Fotos** (`images/`, `images/gallery/`, `images/services/`) — stock de
+  [Unsplash](https://unsplash.com) (licencia Unsplash: uso libre comercial y personal).
+- **Video** (`images/video/`) — clips de [Pexels](https://www.pexels.com) (licencia Pexels: uso
+  libre, sin atribución requerida). El video de fondo del hero y la sección "Video" están
+  claramente marcados en el sitio como muestra ("Sample footage for layout").
 - **Repertoire** — lista de ejemplo basada en las dos canciones mencionadas en un post público
   (Venus, Bananarama); reemplázala con el setlist real.
 - **Upcoming Shows** — placeholder; agrega fechas reales cuando las tengas.
 - **Reviews** — el "100% recommend" sí es un dato público real de la página (7 reviews).
+
+Para reemplazar cualquier foto o video, simplemente sobreescribe el archivo correspondiente en
+`images/` (mismo nombre) o edita la ruta en `index.html`.
 
 ## Estructura
 

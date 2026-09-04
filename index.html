@@ -19,6 +19,7 @@
         <li><a href="#nosotros">About</a></li>
         <li><a href="#servicios">Services</a></li>
         <li><a href="#musica">Repertoire</a></li>
+        <li><a href="#video">Video</a></li>
         <li><a href="#gallery">Gallery</a></li>
         <li><a href="#testimonios">Reviews</a></li>
         <li><a href="#contacto">Booking</a></li>
@@ -31,6 +32,9 @@
 
   <main>
     <section id="inicio" class="hero">
+      <video class="hero-bg-video" autoplay muted loop playsinline poster="images/video/hero-poster.jpg">
+        <source src="images/video/hero-bg.mp4" type="video/mp4">
+      </video>
       <div class="hero-bg"></div>
       <div class="hero-content">
         <div class="hero-badge">
@@ -62,8 +66,13 @@
       <div class="container">
         <h2 class="section-title">About</h2>
         <div class="about-grid">
-          <p class="about-text">Muzik Engine Band (MEB) is a high-energy live band bringing music to the top of the dance floor at weddings, private parties and corporate events. With a full lineup of vocalists and musicians, MEB delivers a polished, professional show built around crowd favorites that get everyone dancing.</p>
-          <p class="about-text">This site is a prototype built from the band's public Facebook page — real photos, member bios, tour dates and music links can be swapped in any time.</p>
+          <div class="about-photo">
+            <img src="images/about.jpg" alt="Crowd enjoying a live band performance (sample photo)" loading="lazy">
+          </div>
+          <div class="about-copy">
+            <p class="about-text">Muzik Engine Band (MEB) is a high-energy live band bringing music to the top of the dance floor at weddings, private parties and corporate events. With a full lineup of vocalists and musicians, MEB delivers a polished, professional show built around crowd favorites that get everyone dancing.</p>
+            <p class="about-text">This site is a prototype built from the band's public Facebook page — real photos, member bios, tour dates and music links can be swapped in any time.</p>
+          </div>
         </div>
       </div>
     </section>
@@ -74,14 +83,17 @@
         <p class="services-intro">MEB performs for all kinds of events with a repertoire built to fit the room.</p>
         <ul class="services-list">
           <li class="service-item">
+            <div class="service-photo"><img src="images/services/wedding.jpg" alt="Wedding celebration toast (sample photo)" loading="lazy"></div>
             <h3 class="service-title">Weddings</h3>
             <p class="service-text">Ceremony, cocktail hour and full reception sets — from first dance to last call.</p>
           </li>
           <li class="service-item">
+            <div class="service-photo"><img src="images/services/private.jpg" alt="Private party crowd celebrating (sample photo)" loading="lazy"></div>
             <h3 class="service-title">Private Events</h3>
             <p class="service-text">Anniversaries, birthdays and celebrations with a live band that fills the dance floor.</p>
           </li>
           <li class="service-item">
+            <div class="service-photo"><img src="images/services/corporate.jpg" alt="Elegant lounge event space (sample photo)" loading="lazy"></div>
             <h3 class="service-title">Corporate &amp; Galas</h3>
             <p class="service-text">Polished, professional live music for company parties, galas and fundraisers.</p>
           </li>
@@ -99,7 +111,7 @@
           </div>
           <button type="button" class="gallery-arrow gallery-arrow-next" aria-label="Next photos">&rsaquo;</button>
         </div>
-        <p class="gallery-empty-note">Add show photos to <code>images/gallery/</code> and run <code>node generate-gallery.js</code> to fill this section.</p>
+        <p class="gallery-empty-note">Sample stock photos for layout — replace <code>images/gallery/</code> with real show photos and run <code>node generate-gallery.js</code>.</p>
       </div>
     </section>
 
@@ -110,6 +122,7 @@
     </div>
 
     <section id="musica" class="section music">
+      <div class="music-bg" style="background-image:url('images/music-bg.jpg')"></div>
       <div class="container">
         <h2 class="section-title">Repertoire</h2>
         <p class="music-intro">A crowd-tested setlist spanning decades of dance-floor hits.</p>
@@ -122,6 +135,18 @@
           <li>Latin &amp; Dance</li>
         </ul>
         <p class="music-release">Follow the band's <a href="https://www.facebook.com/bringingmusictothetop" target="_blank" rel="noopener">Facebook page</a> for the monthly show calendar.</p>
+      </div>
+    </section>
+
+    <section id="video" class="section video">
+      <div class="container">
+        <h2 class="section-title">Video</h2>
+        <p class="video-intro">Sample footage for layout — swap in the band's real performance video (YouTube embed or MP4).</p>
+        <div class="video-frame">
+          <video controls preload="metadata" poster="images/video/live-poster.jpg">
+            <source src="images/video/live-performance.mp4" type="video/mp4">
+          </video>
+        </div>
       </div>
     </section>
 

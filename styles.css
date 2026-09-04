@@ -101,13 +101,22 @@ body {
   text-align: center;
   padding: 2rem 1.5rem 4rem;
 }
+.hero-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.35;
+  filter: saturate(1.1);
+}
 .hero-bg {
   position: absolute;
   inset: 0;
   background:
-    radial-gradient(ellipse 80% 50% at 50% 35%, rgba(212, 175, 55, 0.16) 0%, transparent 55%),
-    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(179, 18, 42, 0.18) 0%, transparent 60%),
-    linear-gradient(180deg, #120d09 0%, #0e0b08 60%, #0e0b08 100%);
+    radial-gradient(ellipse 80% 50% at 50% 35%, rgba(212, 175, 55, 0.22) 0%, transparent 55%),
+    radial-gradient(ellipse 60% 40% at 20% 80%, rgba(179, 18, 42, 0.22) 0%, transparent 60%),
+    linear-gradient(180deg, rgba(18, 13, 9, 0.75) 0%, rgba(14, 11, 8, 0.88) 55%, #0e0b08 100%);
   pointer-events: none;
 }
 .hero-content { position: relative; z-index: 1; }
@@ -236,6 +245,24 @@ body {
 /* --- About --- */
 .about-grid {
   display: grid;
+  grid-template-columns: 1fr 1.3fr;
+  gap: 2rem;
+  align-items: center;
+}
+.about-photo {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  aspect-ratio: 4 / 5;
+}
+.about-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.about-copy {
+  display: grid;
   gap: 1.25rem;
 }
 .about-text {
@@ -243,6 +270,14 @@ body {
   font-weight: 300;
   color: var(--text-muted);
   font-size: 1.05rem;
+}
+@media (max-width: 700px) {
+  .about-grid {
+    grid-template-columns: 1fr;
+  }
+  .about-photo {
+    aspect-ratio: 16 / 10;
+  }
 }
 
 /* --- Services --- */
@@ -262,10 +297,24 @@ body {
   gap: 1.5rem;
 }
 .service-item {
-  padding: 1.5rem;
+  overflow: hidden;
   border: 1px solid var(--border);
   border-radius: 8px;
   background: rgba(212, 175, 55, 0.03);
+}
+.service-photo {
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
+}
+.service-photo img {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.4s;
+}
+.service-item:hover .service-photo img {
+  transform: scale(1.05);
 }
 .service-title {
   font-family: var(--font-display);
@@ -273,11 +322,12 @@ body {
   font-size: 1.25rem;
   letter-spacing: 0.04em;
   color: var(--text);
-  margin: 0 0 0.5rem;
+  margin: 1.25rem 1.5rem 0.5rem;
   text-transform: uppercase;
 }
 .service-text {
   margin: 0;
+  padding: 0 1.5rem 1.5rem;
   font-weight: 300;
   color: var(--text-muted);
   font-size: 0.95rem;
@@ -418,7 +468,21 @@ body {
 
 /* --- Music / Repertoire --- */
 .music {
+  position: relative;
   background: var(--bg-card);
+  overflow: hidden;
+}
+.music-bg {
+  position: absolute;
+  inset: 0;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.16;
+  filter: saturate(1.2);
+}
+.music .container {
+  position: relative;
+  z-index: 1;
 }
 .music-intro {
   color: var(--text-muted);
@@ -448,6 +512,26 @@ body {
   text-decoration: none;
 }
 .music-release a:hover { text-decoration: underline; }
+
+/* --- Video --- */
+.video-intro {
+  color: var(--text-muted);
+  margin: 0 0 1.5rem;
+  font-weight: 300;
+  font-size: 0.95rem;
+}
+.video-frame {
+  border-radius: 10px;
+  overflow: hidden;
+  border: 1px solid var(--border);
+  background: #000;
+}
+.video-frame video {
+  display: block;
+  width: 100%;
+  height: auto;
+  max-height: 70vh;
+}
 
 /* --- Tour --- */
 .tour-intro {
